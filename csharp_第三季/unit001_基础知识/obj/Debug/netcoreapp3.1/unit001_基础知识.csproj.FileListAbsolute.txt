@@ -1,0 +1,14 @@
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.exe
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.deps.json
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.runtimeconfig.json
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.runtimeconfig.dev.json
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.dll
+E:\vsc#\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.pdb
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.csproj.AssemblyReference.cache
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.GeneratedMSBuildEditorConfig.editorconfig
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.AssemblyInfoInputs.cache
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.AssemblyInfo.cs
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.csproj.CoreCompileInputs.cache
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.dll
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.pdb
+E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+E:\vsc#\csharp_第三季\unit005_tankkill\bin\Debug\unit005_tankkill.exe.config
+E:\vsc#\csharp_第三季\unit005_tankkill\bin\Debug\unit005_tankkill.exe
+E:\vsc#\csharp_第三季\unit005_tankkill\bin\Debug\unit005_tankkill.pdb
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.Properties.Resources.resources
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.csproj.GenerateResource.cache
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.csproj.CoreCompileInputs.cache
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.exe
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.pdb
+E:\vsc#\csharp_第三季\unit005_tankkill\obj\Debug\unit005_tankkill.Form1.resources

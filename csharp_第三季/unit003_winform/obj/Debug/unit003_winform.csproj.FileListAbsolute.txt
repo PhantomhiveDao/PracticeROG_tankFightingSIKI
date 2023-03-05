@@ -1,0 +1,10 @@
+E:\vsc#\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.exe.config
+E:\vsc#\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.exe
+E:\vsc#\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.pdb
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.AssemblyReference.cache
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.Form1.resources
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.Properties.Resources.resources
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.GenerateResource.cache
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.CoreCompileInputs.cache
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.exe
+E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.pdb
