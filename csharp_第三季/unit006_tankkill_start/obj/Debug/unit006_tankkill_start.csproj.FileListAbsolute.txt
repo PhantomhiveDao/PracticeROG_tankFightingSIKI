@@ -8,3 +8,13 @@ E:\vsc#\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start
 E:\vsc#\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.exe
 E:\vsc#\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.pdb
 E:\vsc#\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.Form1.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\bin\Debug\unit006_tankkill_start.exe.config
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\bin\Debug\unit006_tankkill_start.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\bin\Debug\unit006_tankkill_start.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.csproj.AssemblyReference.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.Form1.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.Properties.Resources.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.csproj.GenerateResource.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.csproj.CoreCompileInputs.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit006_tankkill_start\obj\Debug\unit006_tankkill_start.pdb

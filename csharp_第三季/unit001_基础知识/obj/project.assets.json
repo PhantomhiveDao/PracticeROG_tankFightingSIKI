@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vsc#\\csharp_第三季\\unit001_基础知识\\unit001_基础知识.csproj",
+      "projectUniqueName": "E:\\GitHubProjects\\PracticeROG\\csharp_第三季\\unit001_基础知识\\unit001_基础知识.csproj",
       "projectName": "unit001_基础知识",
-      "projectPath": "E:\\vsc#\\csharp_第三季\\unit001_基础知识\\unit001_基础知识.csproj",
+      "projectPath": "E:\\GitHubProjects\\PracticeROG\\csharp_第三季\\unit001_基础知识\\unit001_基础知识.csproj",
       "packagesPath": "C:\\Users\\mkdz\\.nuget\\packages\\",
-      "outputPath": "E:\\vsc#\\csharp_第三季\\unit001_基础知识\\obj\\",
+      "outputPath": "E:\\GitHubProjects\\PracticeROG\\csharp_第三季\\unit001_基础知识\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\VisualStudio\\VsSDK\\NuGetPackages"

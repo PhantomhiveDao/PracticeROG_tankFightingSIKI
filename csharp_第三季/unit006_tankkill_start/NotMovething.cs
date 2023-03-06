@@ -12,6 +12,7 @@ namespace unit006_tankkill_start
     
     class NotMovething:GameObject
     {
+        //绘制时使用的图片
         public Image Img { get; set; }
 
         protected override Image GetImage()
@@ -21,7 +22,7 @@ namespace unit006_tankkill_start
         public NotMovething(int x, int y, Image img)
         {
             this.X = x;
-            this.Y = x;
+            this.Y = y;
             this.Img = img;
 
         }

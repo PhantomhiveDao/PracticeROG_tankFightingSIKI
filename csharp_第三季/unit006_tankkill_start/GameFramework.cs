@@ -12,19 +12,23 @@ namespace unit006_tankkill_start
 
 
         public static Graphics g;
+
+        //游戏开始时做的事情
         public static void Start()
         {
             GameObjectManager.CreatMap();
-            Console.WriteLine("--创建地图--");
-
         }
 
+        //持续要做的事情
         public static void Update()
         { //fps
             GameObjectManager.DrawMap();
-            Console.WriteLine("--画地图--");
+            
+
+            //Console.WriteLine("在画地图");
 
 
         }
+
     }
 }
