@@ -61,5 +61,19 @@ namespace unit006_tankkill_start
         {
             t.Abort();
         }
+
+        //按键按下时--事件消息
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (e.KeyCode = Keys.W)
+            //{                
+            //}
+            GameObjectManager.KeyDown(e);
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            GameObjectManager.KeyUp(e);
+        }
     }
 }

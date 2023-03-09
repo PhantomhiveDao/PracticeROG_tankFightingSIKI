@@ -3,10 +3,95 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using unit006_tankkill_start.Properties;
 
 namespace unit006_tankkill_start
 {
-    class MyTank:MoveThing
+    class MyTank : MoveThing
     {
+        public bool IsMoving { get; set; }
+        public MyTank(int x, int y, int speed)
+        {
+            IsMoving = false;
+            this.X = x;
+            this.Y = y;
+            this.Speed = speed;
+            BitmapDown = Resources.MyTankDown;
+            BitmapUp = Resources.MyTankUp;
+            BitmapRight = Resources.MyTankRight;
+            BitmapLeft = Resources.MyTankLeft;
+            this.Dir = Direction.Up;
+
+        }
+        private void Move()
+        {
+            if (IsMoving == false) return;
+
+            switch (Dir)
+            {
+                case Direction.Up:
+                    Y -= Speed;
+                    break;
+                case Direction.Down:
+                    Y += Speed;
+                    break;
+                case Direction.Left:
+                    X -= Speed;
+                    break;
+                case Direction.Right:
+                    X += Speed;
+                    break;
+            }
+        }
+        public void KeyDown(KeyEventArgs args)
+        {
+            switch (args.KeyCode)
+            {
+                case Keys.W:
+                    Dir = Direction.Up;
+                    IsMoving = true;
+                    Console.WriteLine("按下了W");
+                    break;
+                case Keys.S:
+                    Dir = Direction.Down;
+                    IsMoving = true;
+                    break;
+                case Keys.A:
+                    Dir = Direction.Left;
+                    IsMoving = true;
+                    break;
+                case Keys.D:
+                    Dir = Direction.Right;
+                    IsMoving = true;
+                    break;
+            }
+        }
+        public void KeyUp(KeyEventArgs args)
+        {
+            switch (args.KeyCode)
+            {
+                case Keys.W:
+                    IsMoving = false;
+                    break;
+                case Keys.S:
+                    IsMoving = false;
+                    break;
+                case Keys.A:
+                    IsMoving = false;
+                    break;
+                case Keys.D:
+                    IsMoving = false;
+                    break;
+            }
+        }
+        public override void Update()
+        {
+            //在移动前进行移动检测
+            Move();
+
+            base.Update();
+        }
+        
     }
 }

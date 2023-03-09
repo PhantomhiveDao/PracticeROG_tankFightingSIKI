@@ -19,7 +19,7 @@ namespace unit006_tankkill_start
     {
         
 
-        public int speed { get; set; }
+        public int Speed { get; set; }
         public Bitmap BitmapUp {get;set;}
         public Bitmap BitmapDown {get;set;}
         public Bitmap BitmapLeft {get;set;}
@@ -35,6 +35,7 @@ namespace unit006_tankkill_start
             {
                 case Direction.Up:
                     bitmap= BitmapUp;
+                    //Console.WriteLine("改了图");
                     break;
                 case Direction.Down:
                     bitmap = BitmapDown;
@@ -47,7 +48,7 @@ namespace unit006_tankkill_start
                     break;
             }
             bitmap.MakeTransparent(Color.Black);
-            return BitmapUp;
+            return bitmap;
         }
     }
 }

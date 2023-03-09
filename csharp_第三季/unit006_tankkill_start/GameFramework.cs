@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace unit006_tankkill_start
 {
@@ -17,18 +18,27 @@ namespace unit006_tankkill_start
         public static void Start()
         {
             GameObjectManager.CreatMap();
+            GameObjectManager.CreatMyTank();
         }
 
         //持续要做的事情
         public static void Update()
         { //fps
-            GameObjectManager.DrawMap();
-            
+            //GameObjectManager.DrawMap();
+            //GameObjectManager.DrawMyTank();            
+            GameObjectManager.Update();
 
             //Console.WriteLine("在画地图");
 
 
         }
 
+        //按键按下时
+        public static void KeyDown(KeyEventArgs args)
+        {
+        }
+        public static void KeyUp(KeyEventArgs args)
+        {
+        }
     }
 }

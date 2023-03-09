@@ -23,6 +23,10 @@ namespace unit006_tankkill_start
 
 
         }
+        public virtual void Update()
+        {
+            DrawSelf();
+        }
 
 
     }

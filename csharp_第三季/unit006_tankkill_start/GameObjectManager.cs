@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using unit006_tankkill_start.Properties;
 
 namespace unit006_tankkill_start
@@ -14,25 +15,52 @@ namespace unit006_tankkill_start
         private static List<NotMovething> wallList = new List<NotMovething>();
         private static List<NotMovething> steelList = new List<NotMovething>();
         private static NotMovething boss;
+        private static MyTank myTank;
 
-        public static void DrawMap()
+        public static void Update()
         {
-            //foreach (NotMovething nm in wallLists)
-            //{
-            //    nm.DrawSelf();
-            //    //Console.WriteLine("666");
-            //}
-            for (int i = 0; i < wallList.Count; i++)
+            for(int i = 0; i < wallList.Count; i++)
             {
-                wallList[i].DrawSelf();
+                wallList[i].Update();
             }
             Console.WriteLine("drawmap end");
             for (int i = 0; i < steelList.Count; i++)
             {
-                steelList[i].DrawSelf();
+                steelList[i].Update();
             }
-            boss.DrawSelf();
-            Console.WriteLine("drawmap end");
+            boss.Update();
+            myTank.Update();
+        }
+        
+        //public static void DrawMap()
+        //{
+        //    //foreach (NotMovething nm in wallLists)
+        //    //{
+        //    //    nm.DrawSelf();
+        //    //    //Console.WriteLine("666");
+        //    //}
+        //    for (int i = 0; i < wallList.Count; i++)
+        //    {
+        //        wallList[i].DrawSelf();
+        //    }
+        //    Console.WriteLine("drawmap end");
+        //    for (int i = 0; i < steelList.Count; i++)
+        //    {
+        //        steelList[i].DrawSelf();
+        //    }
+        //    boss.DrawSelf();
+        //    Console.WriteLine("drawmap end");
+        //}
+        //public static void DrawMyTank()
+        //{
+        //    myTank.DrawSelf();
+        //}
+        public static void CreatMyTank()
+        {
+            int x = 5 * 30;
+            int y = 14 * 30;
+
+            myTank = new MyTank(x, y, 2);
         }
 
         public static void CreatMap()
@@ -105,5 +133,14 @@ namespace unit006_tankkill_start
             boss = new NotMovething(xPosition, yPosition, img);
         }
 
+        //按键按下时
+        public static void KeyDown(KeyEventArgs args)
+        {
+            myTank.KeyDown(args);
+        }
+        public static void KeyUp(KeyEventArgs args)
+        {
+            myTank.KeyUp(args);
+        }
     }
 }
