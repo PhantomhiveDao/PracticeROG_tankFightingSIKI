@@ -12,3 +12,17 @@ E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_�
 E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.dll
 E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.pdb
 E:\vsc#\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.genruntimeconfig.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.deps.json
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.runtimeconfig.json
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.runtimeconfig.dev.json
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.dll
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\bin\Debug\netcoreapp3.1\unit001_基础知识.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.csproj.AssemblyReference.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.AssemblyInfoInputs.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.AssemblyInfo.cs
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.csproj.CoreCompileInputs.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.dll
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit001_基础知识\obj\Debug\netcoreapp3.1\unit001_基础知识.genruntimeconfig.cache

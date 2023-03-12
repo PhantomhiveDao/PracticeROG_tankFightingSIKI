@@ -1,0 +1,9 @@
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\bin\Debug\unit004手动创建form.exe.config
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\bin\Debug\unit004手动创建form.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\bin\Debug\unit004手动创建form.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.csproj.AssemblyReference.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.Properties.Resources.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.csproj.GenerateResource.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.csproj.CoreCompileInputs.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit004手动创建form\obj\Debug\unit004手动创建form.pdb

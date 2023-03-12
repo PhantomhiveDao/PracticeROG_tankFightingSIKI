@@ -8,3 +8,13 @@ E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.Genera
 E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.CoreCompileInputs.cache
 E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.exe
 E:\vsc#\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.exe.config
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\bin\Debug\unit003_winform.pdb
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.AssemblyReference.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.Form1.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.Properties.Resources.resources
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.GenerateResource.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.csproj.CoreCompileInputs.cache
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.exe
+E:\GitHubProjects\PracticeROG\csharp_第三季\unit003_winform\obj\Debug\unit003_winform.pdb

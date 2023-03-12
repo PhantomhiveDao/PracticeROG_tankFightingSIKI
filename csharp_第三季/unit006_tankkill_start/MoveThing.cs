@@ -10,27 +10,32 @@ namespace unit006_tankkill_start
     //枚举类型的朝向
     enum Direction
     { 
-        Up,
-        Down,
-        Left,
-        Right
+        Up=0,
+        Down=1,
+        Left=2,
+        Right=3
     }
     class MoveThing : GameObject
     {
-        
+        //添加一个锁，解决多线程的问题
+        private Object _lock = new Object();
 
         public int Speed { get; set; }
         public Bitmap BitmapUp {get;set;}
         public Bitmap BitmapDown {get;set;}
         public Bitmap BitmapLeft {get;set;}
         public Bitmap BitmapRight {get;set;}
+
+        //public bool IsMoving { get; set; }
         //朝向
         private Direction dir;
         public Direction Dir { get { return dir; } 
             set {
                 dir = value;
                 Bitmap bmp = null;
-                switch (dir){
+
+                switch (dir)
+                {
                     case Direction.Up:
                         bmp = BitmapUp;
                         break;
@@ -44,11 +49,19 @@ namespace unit006_tankkill_start
                         bmp = BitmapRight;
                         break;
                 }
-                Width = bmp.Width;
-                Height = bmp.Height;
+                lock (_lock)
+                { 
+                    //多线程冲突问题。长时间触发按下按键这个方法
+                    Width = bmp.Width;
+                    Height = bmp.Height;
+                }
+               
             } 
         }
-
+        /// <summary>
+        /// 更换图片
+        /// </summary>
+        /// <returns></returns>
         protected override Image GetImage()
         {
 
@@ -69,8 +82,17 @@ namespace unit006_tankkill_start
                     bitmap = BitmapRight;
                     break;
             }
+            
             bitmap.MakeTransparent(Color.Black);
             return bitmap;
+        }
+        public override void DrawSelf()
+        {
+            lock (_lock)
+            {
+                base.DrawSelf();
+
+            }
         }
     }
 }

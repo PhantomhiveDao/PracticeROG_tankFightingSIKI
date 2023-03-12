@@ -17,8 +17,10 @@ namespace unit006_tankkill_start
         //游戏开始时做的事情
         public static void Start()
         {
+            GameObjectManager.Start();
             GameObjectManager.CreatMap();
             GameObjectManager.CreatMyTank();
+            
         }
 
         //持续要做的事情
