@@ -25,7 +25,29 @@ namespace unit006_tankkill_start
         public Bitmap BitmapLeft {get;set;}
         public Bitmap BitmapRight {get;set;}
         //朝向
-        public Direction Dir { get; set; }
+        private Direction dir;
+        public Direction Dir { get { return dir; } 
+            set {
+                dir = value;
+                Bitmap bmp = null;
+                switch (dir){
+                    case Direction.Up:
+                        bmp = BitmapUp;
+                        break;
+                    case Direction.Down:
+                        bmp = BitmapDown;
+                        break;
+                    case Direction.Left:
+                        bmp = BitmapLeft;
+                        break;
+                    case Direction.Right:
+                        bmp = BitmapRight;
+                        break;
+                }
+                Width = bmp.Width;
+                Height = bmp.Height;
+            } 
+        }
 
         protected override Image GetImage()
         {

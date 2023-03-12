@@ -11,6 +11,9 @@ namespace unit006_tankkill_start
     {
         public int X { get; set; }
         public int Y { get; set; }
+        //获取图片尺寸
+        public int Width { get; set; }
+        public int Height { get; set; }
 
         //需要子类重写
         protected abstract Image GetImage();
@@ -27,7 +30,15 @@ namespace unit006_tankkill_start
         {
             DrawSelf();
         }
-
+        /// <summary>
+        /// 判断是是否移入物体
+        /// </summary>
+        /// <returns></returns>
+        public Rectangle GetRectangle()
+        {
+            Rectangle rectangle = new Rectangle(X, Y, Width, Height);
+            return rectangle;
+        }
 
     }
     

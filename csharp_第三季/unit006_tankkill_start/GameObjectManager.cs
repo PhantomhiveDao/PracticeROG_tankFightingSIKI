@@ -24,6 +24,7 @@ namespace unit006_tankkill_start
                 wallList[i].Update();
             }
             Console.WriteLine("drawmap end");
+            
             for (int i = 0; i < steelList.Count; i++)
             {
                 steelList[i].Update();
@@ -31,7 +32,25 @@ namespace unit006_tankkill_start
             boss.Update();
             myTank.Update();
         }
-        
+        /// <summary>
+        /// 检测是否在墙里
+        /// </summary>
+        /// <param name="rt"></param>
+        /// <returns></returns>
+        public static NotMovething IsCollidedWall(Rectangle rt)
+        {
+            foreach (NotMovething wall in wallList)
+            {
+                if (wall.GetRectangle().IntersectsWith(rt))
+                {
+                    return wall;
+                }
+            }
+            return null;
+        }
+        /// <summary>
+        /// 之前是每一帧直接绘制在窗口上，现在更改为->先绘制在一张与窗口相同大小的图片上。
+        /// </summary>
         //public static void DrawMap()
         //{
         //    //foreach (NotMovething nm in wallLists)

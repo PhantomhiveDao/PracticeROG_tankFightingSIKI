@@ -12,8 +12,13 @@ namespace unit006_tankkill_start
     
     class NotMovething:GameObject
     {
+        private Image img;
         //绘制时使用的图片
-        public Image Img { get; set; }
+        public Image Img { get { return img; } 
+            set {
+                img=value;
+                Width = img.Width;
+                Height = img.Height; } }
 
         protected override Image GetImage()
         {

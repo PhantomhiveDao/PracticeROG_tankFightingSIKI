@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,9 +89,73 @@ namespace unit006_tankkill_start
         public override void Update()
         {
             //在移动前进行移动检测
+            MoveCheck();
             Move();
 
             base.Update();
+        }
+        private void MoveCheck()
+        {
+            #region 检查是否超出窗体边界。
+            //检查是否超出窗体边界。
+            if (Dir == Direction.Up)
+            {
+                if (Y - Speed < 0)
+                {
+                    IsMoving = false; return;
+                }                
+            }
+            else if (Dir == Direction.Down)
+            {
+                if (Y + Speed+Height  > 450)
+                {
+                    
+                    IsMoving = false;return;
+                }
+            }
+            else if (Dir == Direction.Left)
+            {
+                if (X -Speed <0)
+                {
+
+                    IsMoving = false; return;
+                }
+            }
+            else if (Dir == Direction.Right)
+            {
+                if (X+Speed+Width > 450)
+                {
+
+                    IsMoving = false; return;
+                }
+            }
+            #endregion
+
+            //检查是否与墙碰撞-碰撞检测放在gameManager里
+            //Rectangle；->传的参数值：左上角的坐标点，矩形的长和宽
+
+            //通过移动之后的位置进行判断
+            Rectangle rect = GetRectangle();
+            switch(Dir)
+                {
+                case Direction.Up:
+                    rect.Y -= Speed;
+                    break;
+                case Direction.Down:
+                    rect.Y += Speed;
+                    break;
+                case Direction.Left:
+                    rect.X -= Speed;
+                    break;
+                case Direction.Right:
+                    rect.X += Speed;
+                    break;
+                  
+            }
+            if (GameObjectManager.IsCollidedWall(rect)!=null)
+            {
+                IsMoving = false;return;
+            }
         }
         
     }
