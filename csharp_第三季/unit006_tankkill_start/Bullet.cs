@@ -98,26 +98,49 @@ namespace unit006_tankkill_start
                 IsDestroy = true;
                 GameObjectManager.DestroyWall(wall);
                 GameObjectManager.CreatExplosion(xExplosion,yExplosion);
+                SoundManager.PlayBlast();
+                return;
+            } 
+             if (GameObjectManager.IsCollidedBoss(rect))
+            {
+                IsDestroy = true;
+                GameFramework.ChangeToGameOver();
+                SoundManager.PlayBlast();
+
                 return;
             }
             if (GameObjectManager.IsCollidedSteel(rect) != null)
             {
                 IsDestroy = true;return;
+                SoundManager.PlayBlast();
+
             }
             if (Tag == Tag.MyTank)
             {
                 EnemyTank tank = null;
-                if ((tank=GameObjectManager.IsCollidedEnemyTank(rect)) != null)
+                if ((tank = GameObjectManager.IsCollidedEnemyTank(rect)) != null)
                 {
                     IsDestroy = true;
                     GameObjectManager.DestroyEnemyTank(tank);
+                    GameObjectManager.CreatExplosion(xExplosion, yExplosion);
+                    SoundManager.PlayHit();
+
                     return;
                 }
             }
-            if (GameObjectManager.IsCollidedBoss(rect))
+            else if(Tag == Tag.EnemyTank)
             {
-                //IsMoving = false; return;
+                MyTank mytank = null;
+                if ((mytank = GameObjectManager.IsCollidedMyTank(rect)) != null)
+                {
+                    IsDestroy = true;
+                    GameObjectManager.CreatExplosion(xExplosion, yExplosion);
+                    SoundManager.PlayBlast();
+                    mytank.TakeDamage();
+                    return;
+                }
             }
+            
         }
         private void Move()
         {

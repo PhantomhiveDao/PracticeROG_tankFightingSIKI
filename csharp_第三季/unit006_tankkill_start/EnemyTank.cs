@@ -11,6 +11,10 @@ namespace unit006_tankkill_start
     class EnemyTank:MoveThing
     {
         //随机数最好设置为成员变量/调用同一个种子生成的随机数。
+        public int AttackSpeed { get; set; }
+        public int ChangeDirSpeed { get; set; }
+        private int attackCount =0;//计数器
+        private int changeDirSpeed =0;//计数器
         private static Random r = new Random();
         public EnemyTank(int x, int y, int speed,Bitmap bmpUp, Bitmap bmpDown, Bitmap bmpLeft,Bitmap bmpRight)
         {
@@ -23,9 +27,46 @@ namespace unit006_tankkill_start
             BitmapRight = bmpRight;
             BitmapLeft = bmpLeft;
             this.Dir = Direction.Down;
-
+            AttackSpeed = 60;//一秒发射一个
+            ChangeDirSpeed = 80;
         }
-
+        private void AttackCheck()
+        {
+            attackCount++;
+            if (attackCount < AttackSpeed) return;
+            Attack();
+            attackCount = 0;
+        }
+        private void Attack()
+        {
+            int x = this.X;
+            int y = this.Y;
+            switch (Dir)
+            {
+                case Direction.Up:
+                    x = x + Width / 2;
+                    break;
+                case Direction.Down:
+                    x = x + Width / 2;
+                    y += Height;
+                    break;
+                case Direction.Left:
+                    y = y + Height / 2;
+                    break;
+                case Direction.Right:
+                    x += Width;
+                    y = y + Height / 2;
+                    break;
+            }
+            GameObjectManager.CreatBullet(x, y, Tag.EnemyTank, Dir);
+        }
+        private void AutoChangeDirection()
+        {
+            changeDirSpeed++;
+            if (changeDirSpeed < ChangeDirSpeed) return;
+            ChangeDirection();
+            changeDirSpeed = 0;
+        }
         /// <summary>
         /// 改变方向
         /// </summary>
@@ -72,7 +113,8 @@ namespace unit006_tankkill_start
             //在移动前进行移动检测
             MoveCheck();
             Move();
-
+            AttackCheck();//检测是否攻击方法
+            AutoChangeDirection();
             base.Update();
         }
         private void MoveCheck()

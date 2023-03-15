@@ -142,6 +142,7 @@ namespace unit006_tankkill_start
             enemyBornCount++;
             if (enemyBornCount < enemyBornSpeed) return;
 
+            SoundManager.PlayedAdd();
             //在0-2随一个
             Random rd = new Random();
             int index=rd.Next(0,3);
@@ -219,6 +220,12 @@ namespace unit006_tankkill_start
         public static bool IsCollidedBoss(Rectangle rt)
         {
             return boss.GetRectangle().IntersectsWith(rt);      
+          
+        }
+        public static MyTank IsCollidedMyTank(Rectangle rt)
+        {
+            if (myTank.GetRectangle().IntersectsWith(rt)) return myTank;
+            else return null;
           
         }
         public static EnemyTank IsCollidedEnemyTank(Rectangle rt)

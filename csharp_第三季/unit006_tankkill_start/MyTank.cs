@@ -12,11 +12,16 @@ namespace unit006_tankkill_start
     class MyTank : MoveThing
     {
         public bool IsMoving { get; set; }
+        public int Hp = 5;
+        private int originalX;
+        private int originalY;
         public MyTank(int x, int y, int speed)
         {
             IsMoving = false;
             this.X = x;
             this.Y = y;
+            originalX = x;
+            originalY = y;
             this.Speed = speed;
             BitmapDown = Resources.MyTankDown;
             BitmapUp = Resources.MyTankUp;
@@ -160,6 +165,7 @@ namespace unit006_tankkill_start
        
         private void Attack()
         {
+            SoundManager.PlayFire();
             int x = this.X;
             int y = this.Y;
             switch (Dir)
@@ -199,6 +205,15 @@ namespace unit006_tankkill_start
                     break;
             }
         }
-
+        public void TakeDamage()
+        {
+            Hp--;
+            if (Hp <= 0)
+            {
+                X = originalX;
+                Y = originalY;
+                Hp = 4;
+            }
+        }
     }
 }
